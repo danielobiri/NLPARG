@@ -41,6 +41,7 @@ import os
 os.environ['PYTHONHASHSEED']='0'
 seed=42
 np.random.seed(seed)
+import sys
 
 #tf.set_random_seed(12345)
 from gensim.scripts.glove2word2vec import glove2word2vec
