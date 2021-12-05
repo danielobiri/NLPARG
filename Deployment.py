@@ -98,7 +98,7 @@ new_model = gensim.models.Word2Vec.load("CBOW_model_three")
 
 
 text= []
-for index, record in enumerate(SeqIO.parse(r"Training_Old.fasta",'fasta')):
+for index, record in enumerate(SeqIO.parse(r"Pre_met_Positive_training_set.fasta",'fasta')):
     tri_tokens = trigrams(record.seq)
     temp_str = ""
     for item in ((tri_tokens)):
@@ -184,7 +184,7 @@ data_test = pad_sequences(sequences, maxlen=MAX_SEQUENCE_LENGTH,padding="post")
      
 print("using saved model")
 # Option 1: Load with the custom_object argument.
-loaded_1 = keras.models.load_model("Glovethree_model.h5")
+loaded_1 = keras.models.load_model("Glove_model.h5")
 
 
 
