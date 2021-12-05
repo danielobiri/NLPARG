@@ -174,10 +174,6 @@ def rnn_architecture():
              )
     return model
 
-with open('tokenizer.pickle', 'rb') as handle:
-    tokenizer = pickle.load(handle)
-sequences = tokenizer.texts_to_sequences(X_test)
-data_test = pad_sequences(sequences, maxlen=MAX_SEQUENCE_LENGTH,padding="post")
 
 
       
