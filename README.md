@@ -47,7 +47,7 @@ An output sample
 Author: Daniel Ananey-Obiri (dananeyobiri@gmail.com)
 2021-12-06 02:27:07.764873
 -----------------------------
-Your choice of embedding layer: SG_model.h5
+Your choice of embedding layer: GloVe_model.h5
 context window size: 5 
 k-mer size:3 
 -----------------------------
