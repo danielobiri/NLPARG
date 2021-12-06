@@ -43,7 +43,7 @@ Each sequence has the annotation **(an antimicrobial resistance gene sequence or
 At the end of the file, the number of antimicrobial resistance gene sequences identied are presented
 ```
 An output sample
-
+```
 Author: Daniel Ananey-Obiri (dananeyobiri@gmail.com)
 2021-12-06 02:27:07.764873
 -----------------------------
@@ -53,9 +53,6 @@ k-mer size:3
 -----------------------------
 >gb|AAG08162.1|ARO:3003582|basR [Pseudomonas aeruginosa PAO1]|This is  an antimicrobial resistance gene sequence with a probability of 1.00
 MRILLAEDDLLLGDGIRAGLRLEGDTVEWVTDGVAAENALVTDEFDLLVLDIGLPRRSGLDILRNLRHQGLLTPVLLLTARDKVADRVAGLDSGADDYLTKPFDLDELQARVRALTRRTTGRALPQLVHGELRLDPATHQVTLSGQAVELAPREYALLRLLLENSGKVLSRNQLEQSLYGWSGDVESNAIEVHVHHLRRKLGNQLIRTVRGIGYGIDQPAP
-
-.
-.
-.
+...
 The number of Antimicrobial resistance sequences are 991 out of 1000
 ```
