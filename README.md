@@ -1,6 +1,6 @@
 # NLPARG
 
-**N**atural **L**anguage **P**rocessing for **A**ntimicrobial **R**esistance **G**enes (**NLPARG**) software was developed to predict antimicrobil resistance genes. Three neural embedding models, **Global vectors (GloVe), skip-gram (SG) and Continuous-bag-of-words (CBOW)** were used as embedding layersin recurrent neural networks. Users have the option of using any of the three three neural layers used in the models for prediction.
+**N**atural **L**anguage **P**rocessing for **A**ntimicrobial **R**esistance **G**enes (**NLPARG**) software was developed to predict antimicrobil resistance genes. Three neural embedding models, **Global vectors (GloVe), skip-gram (SG) and Continuous-bag-of-words (CBOW)** were used as embedding layers in recurrent neural networks. Users have the option of using any of the three three neural layers used in the models for prediction.
 
 
 Users have to first download this repository using the command below:
