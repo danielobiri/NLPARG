@@ -56,3 +56,9 @@ MRILLAEDDLLLGDGIRAGLRLEGDTVEWVTDGVAAENALVTDEFDLLVLDIGLPRRSGLDILRNLRHQGLLTPVLLLTA
 ...
 The number of Antimicrobial resistance sequences are 991 out of 1000
 ```
+
+If you need help, get in touch at 
+```
+dananeyobiri@gmail.com
+```
+
