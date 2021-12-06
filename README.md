@@ -29,7 +29,7 @@ python3 NLPARG.py -choice_wordvector [1,2 or 3] -in your_input_file.fasta  -out 
 ```
 Running with default sample
 choice of word vector: Global vector (1)
-input_file: 
+input_file: Positive_training_set.fasta 
 ```
 python3 NLPARG.py -choice_wordvector 1 -in Positive_training_set.fasta  -out file.fasta
 ```
