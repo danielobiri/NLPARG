@@ -1,67 +1,25 @@
 #!/usr/bin/env python3
-
-
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import auc
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-from collections import defaultdict
 from Bio import SeqIO
-from nltk import bigrams
-import gensim, logging
-import numpy as np
 from nltk import trigrams
-#from bert import tokenization
-from keras import backend as K
-#pip install --upgrade tensorflow
 import tensorflow as tf
 import keras
-import pydot as pyd
-#from IPython.display import SVG
-from keras.utils.vis_utils import model_to_dot
-keras.utils.vis_utils.pydot = pyd
-import matplotlib.pyplot as plt
-#from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Embedding, Dense, Embedding, LSTM, GRU
-from keras.initializers import Constant
-from keras.layers.wrappers import Bidirectional
-from keras.layers import Input, Dense, Lambda, LSTM, RepeatVector,Dropout, Conv1D, MaxPooling1D, UpSampling1D,GlobalMaxPool1D
-from sklearn.model_selection import StratifiedKFold
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import matthews_corrcoef
 from keras.preprocessing.sequence import pad_sequences
 import pickle
 import random
-random.seed(12345)
 import os
+import sys
+from flask import Flask, jsonify, request
+import argparse
+import datetime
+
+random.seed(12345)
 os.environ['PYTHONHASHSEED']='0'
 seed=42
 np.random.seed(seed)
-from termcolor import colored
-from colorama import Fore, Back, Style
-import sys
-from flask import Flask, jsonify
-import pickle
-import numpy as np
-from flask import Flask, request
-import argparse
-
-import datetime
-
-import time
 ts=datetime.datetime.now()
-# In[7]:
 
 sequence_index = []
 def preprocess(args):
@@ -81,11 +39,6 @@ def preprocess(args):
     else:
        print(" enter a number to represent any of the following, 1:Glove_model.h5,2:SG_model.h5,3:CBOW_model.h5")
       
-
-    
-
-
-
     for index,seque in enumerate(SeqIO.parse(query_fasta,'fasta')):
         sequence_index.append(index)
         tri_tokens = trigrams(seque.seq)
@@ -98,8 +51,8 @@ def preprocess(args):
     print(len(query_seq))
     
     MAX_SEQUENCE_LENGTH = 450
-    with open('tokenizer.pickle', 'rb') as handle:
-        tokenizer = pickle.load(handle)
+    with open('tokenizer.', 'rb') as handle:
+        tokenizer = .load(handle)
     sequences = tokenizer.texts_to_sequences(query_seq)
     data_test = pad_sequences(sequences, maxlen=MAX_SEQUENCE_LENGTH,padding="post")
     
